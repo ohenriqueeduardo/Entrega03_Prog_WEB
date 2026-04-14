@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autor - Comentar</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Comentar como Autor</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                    <a href="minhas-noticias.html">Minhas Notícias</a>
+                    <a href="editor-noticia.html">Editor Notícia</a>
+                    <a href="nova-noticia.html">Nova Notícia</a>
+                    <a href="publicar-despublicar.html">Publicar/Despublicar</a>
+                    <a href="comentar.html">Comentar</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form-padrao">
+                <h2>Comentar em Notícia</h2>
+                
+                <label>Selecione a notícia:</label>
+                <select>
+                    <option>Robô substitui professores em escola municipal</option>
+                    <option>Água da torneira vira suco com novo filtro</option>
+                    <option>Governo anuncia feriado nacional toda sexta-feira</option>
+                    <option>Chuva de meteoros atinge centro de São Paulo</option>
+                </select>
+                
+                <label>Seu comentário:</label>
+                <textarea rows="5" placeholder="Digite seu comentário como autor..."></textarea>
+                
+                <button type="submit">Enviar Comentário</button>
+            </form>
+            
+            <div class="sucesso" style="margin-top: 1rem;">
+                <strong>Comentários recentes em suas notícias:</strong><br>
+                "Ótima matéria, muito esclarecedora!" - Leitor Anônimo<br>
+                "Concordo plenamente com o autor." - Maria Souza
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - Área do Autor</p>
+        </footer>
+    </div>
+</body>
+</html>

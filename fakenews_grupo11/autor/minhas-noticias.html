@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autor - Minhas Notícias</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Minhas Notícias</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                    <a href="minhas-noticias.html">Minhas Notícias</a>
+                    <a href="editor-noticia.html">Editor Notícia</a>
+                    <a href="nova-noticia.html">Nova Notícia</a>
+                    <a href="publicar-despublicar.html">Publicar/Despublicar</a>
+                    <a href="comentar.html">Comentar</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <h2>Minhas Notícias</h2>
+            
+            <div class="tabela-crud">
+                <table>
+                    <thead>
+                        <tr><th>Título</th><th>Data</th><th>Status</th><th>Ações</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Robô substitui professores em escola</td><td>08/04/2026</td><td>Publicada</td><td><a href="editor-noticia.html" class="btn-editar" style="padding: 0.2rem 0.5rem;">Editar</a> <a href="#" class="btn-excluir" style="padding: 0.2rem 0.5rem;">Apagar</a></td></tr>
+                        <tr><td>Água da torneira vira suco</td><td>07/04/2026</td><td>Publicada</td><td><a href="editor-noticia.html" class="btn-editar">Editar</a> <a href="#" class="btn-excluir">Apagar</a></td></tr>
+                        <tr><td>Novo iPhone terá bateria de 1 semana</td><td>05/04/2026</td><td>Rascunho</td><td><a href="editor-noticia.html" class="btn-editar">Editar</a> <a href="#" class="btn-excluir">Apagar</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="sucesso">
+                <strong>Total de notícias: 12</strong> | Publicadas: 8 | Rascunhos: 4
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - Área do Autor</p>
+        </footer>
+    </div>
+</body>
+</html>

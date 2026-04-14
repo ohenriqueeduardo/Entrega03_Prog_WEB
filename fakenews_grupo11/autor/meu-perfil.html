@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autor - Meu Perfil</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Fake News - Meu Perfil</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                    <a href="minhas-noticias.html">Minhas Notícias</a>
+                    <a href="editor-noticia.html">Editor Notícia</a>
+                    <a href="nova-noticia.html">Nova Notícia</a>
+                    <a href="publicar-despublicar.html">Publicar/Despublicar</a>
+                    <a href="comentar.html">Comentar</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form-padrao">
+                <h2>Meu Perfil - Autor</h2>
+                
+                <img src="../assets/perfis/user1.png" alt="Avatar" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; display: block;" onerror="this.src='https://placehold.co/100x100'">
+                
+                <label>Nome completo:</label>
+                <input type="text" value="João Silva Autor" placeholder="Nome completo">
+                
+                <label>E-mail:</label>
+                <input type="email" value="joao.autor@fakenews.com">
+                
+                <label>UF:</label>
+                <select>
+                    <option value="SP" selected>São Paulo - SP</option>
+                    <option value="RJ">Rio de Janeiro - RJ</option>
+                    <option value="MG">Minas Gerais - MG</option>
+                </select>
+                
+                <label>Biografia:</label>
+                <textarea rows="4" placeholder="Conte um pouco sobre você...">Jornalista especializado em tecnologia há 5 anos. Apaixonado por inovação.</textarea>
+                
+                <button type="submit">Salvar Alterações</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - Área do Autor</p>
+        </footer>
+    </div>
+</body>
+</html>

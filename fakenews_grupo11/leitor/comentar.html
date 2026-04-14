@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor - Comentar</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Comentar Notícia</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                    <a href="minhas-noticias.html">Minhas Notícias</a>
+                    <a href="comentar.html">Comentar</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form-padrao">
+                <h2>Comentar em Notícia</h2>
+                
+                <label>Selecione a notícia:</label>
+                <select>
+                    <option>Eleições 2026: candidato promete grama sintética</option>
+                    <option>Cientistas descobrem nova espécie de gato que late</option>
+                    <option>Governo anuncia feriado nacional toda sexta-feira</option>
+                    <option>Chuva de meteoros atinge centro de São Paulo</option>
+                    <option>Robô substitui professores em escola municipal</option>
+                    <option>Água da torneira vira suco com novo filtro</option>
+                </select>
+                
+                <label>Sua avaliação:</label>
+                <select>
+                    <option>5 estrelas - Excelente!</option>
+                    <option>4 estrelas - Muito bom</option>
+                    <option>3 estrelas - Bom</option>
+                    <option>2 estrelas - Regular</option>
+                    <option>1 estrela - Ruim</option>
+                </select>
+                
+                <label>Seu comentário:</label>
+                <textarea rows="5" placeholder="Digite seu comentário sobre a notícia..."></textarea>
+                
+                <button type="submit">Enviar Comentário</button>
+            </form>
+            
+            <div class="sucesso" style="margin-top: 1rem;">
+                <strong>Últimos comentários que você enviou:</strong><br>
+                "Notícia muito interessante, parabéns ao autor!" - Em: Robô substitui professores<br>
+                "Não concordo com o conteúdo apresentado." - Em: Água da torneira vira suco
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - Área do Leitor</p>
+        </footer>
+    </div>
+</body>
+</html>

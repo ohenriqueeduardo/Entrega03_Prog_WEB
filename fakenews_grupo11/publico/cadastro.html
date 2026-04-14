@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News - Cadastro de Usuário</title>
+    <link rel="stylesheet" href="/fakenews_grupo11/assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Fake News</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="index.html">Home</a>
+                    <a href="lista-noticias.html">Lista de Notícias</a>
+                    <a href="cadastro.html">Cadastro</a>
+                    <a href="login.html">Login</a>
+                    <a href="../autor/dashboard.html">Área Autor</a>
+                    <a href="../leitor/meu-perfil.html">Área Leitor</a>
+                    <a href="../superadmin/dashboard.html">SuperAdmin</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form-padrao">
+                <h2>Cadastro de Usuário</h2>
+                
+                <label>Nome completo:</label>
+                <input type="text" placeholder="Digite seu nome completo" required>
+                
+                <label>E-mail:</label>
+                <input type="email" placeholder="seu@email.com" required>
+                
+                <label>Senha:</label>
+                <input type="password" placeholder="Digite sua senha" required>
+                
+                <label>Confirmar senha:</label>
+                <input type="password" placeholder="Confirme sua senha" required>
+                
+                <label>UF:</label>
+                <select>
+                    <option value="SP">São Paulo - SP</option>
+                    <option value="RJ">Rio de Janeiro - RJ</option>
+                    <option value="MG">Minas Gerais - MG</option>
+                    <option value="BA">Bahia - BA</option>
+                    <option value="RS">Rio Grande do Sul - RS</option>
+                    <option value="DF">Distrito Federal - DF</option>
+                </select>
+                
+                <label>Perfil:</label>
+                <select>
+                    <option value="leitor">Leitor</option>
+                    <option value="autor">Autor</option>
+                </select>
+                
+                <button type="submit">Cadastrar</button>
+                
+                <p style="text-align: center; margin-top: 1rem;">Já tem conta? <a href="login.html">Faça login</a></p>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - Portal de Notícias</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autor - Editor de Notícia</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Editor de Notícia</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                    <a href="minhas-noticias.html">Minhas Notícias</a>
+                    <a href="editor-noticia.html">Editor Notícia</a>
+                    <a href="nova-noticia.html">Nova Notícia</a>
+                    <a href="publicar-despublicar.html">Publicar/Despublicar</a>
+                    <a href="comentar.html">Comentar</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form-padrao">
+                <h2>Editor Notícia</h2>
+                
+                <label>Título da Notícia:</label>
+                <input type="text" value="Robô substitui professores em escola municipal">
+                
+                <label>Categoria:</label>
+                <select>
+                    <option>Tecnologia</option>
+                    <option>Política</option>
+                    <option>Esportes</option>
+                    <option selected>Educação</option>
+                </select>
+                
+                <label>UF:</label>
+                <select>
+                    <option value="SP" selected>São Paulo - SP</option>
+                    <option value="RJ">Rio de Janeiro - RJ</option>
+                    <option value="MG">Minas Gerais - MG</option>
+                </select>
+                
+                <label>Conteúdo:</label>
+                <textarea rows="8">Inovação ou polêmica? Robôs começam a dar aulas em escola de São Paulo. A medida, aprovada pela Secretaria de Educação, promete revolucionar o ensino, mas enfrenta resistência de professores e pais.</textarea>
+                
+                <label>Status:</label>
+                <select>
+                    <option selected>Publicada</option>
+                    <option>Rascunho</option>
+                </select>
+                
+                <button type="submit">Atualizar Notícia</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - Área do Autor</p>
+        </footer>
+    </div>
+</body>
+</html>

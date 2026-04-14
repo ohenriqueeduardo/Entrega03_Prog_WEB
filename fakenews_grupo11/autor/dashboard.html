@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autor - Dashboard</title>
+    <link rel="stylesheet" href="/fakenews_grupo11/assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Fake News - Área do Autor</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                    <a href="minhas-noticias.html">Minhas Notícias</a>
+                    <a href="editor-noticia.html">Editor Notícia</a>
+                    <a href="nova-noticia.html">Nova Notícia</a>
+                    <a href="publicar-despublicar.html">Publicar/Despublicar</a>
+                    <a href="comentar.html">Comentar</a>
+                    <a href="../publico/index.html">Sair</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <h2>Dashboard do Autor</h2>
+            
+            <div class="dashboard-cards">
+                <div class="card-dash">
+                    <h3>Minhas Notícias</h3>
+                    <div class="numero">12</div>
+                    <p>Publicadas</p>
+                </div>
+                <div class="card-dash">
+                    <h3>Visualizações</h3>
+                    <div class="numero">1.247</div>
+                    <p>Total</p>
+                </div>
+                <div class="card-dash">
+                    <h3>Comentários</h3>
+                    <div class="numero">38</div>
+                    <p>Recebidos</p>
+                </div>
+            </div>
+
+            <div class="aviso">
+                <strong>Bem-vindo, Autor!</strong> Aqui você pode gerenciar suas notícias, criar novos conteúdos e acompanhar o engajamento.
+            </div>
+
+            <h3>Últimas Notícias Publicadas</h3>
+            <div class="grid-noticias">
+                <article class="card-noticia">
+                    <h4>Nova tecnologia promete revolucionar o mercado</h4>
+                    <div class="meta">Publicado em: 10/04/2026 | Status: Publicada</div>
+                    <a href="editor-noticia.html" class="btn-editar">Editar</a>
+                    <a href="#" class="btn-excluir">Excluir</a>
+                </article>
+                <article class="card-noticia">
+                    <h4>Entenda as mudanças no código de trânsito</h4>
+                    <div class="meta">Publicado em: 08/04/2026 | Status: Rascunho</div>
+                    <a href="editor-noticia.html" class="btn-editar">Editar</a>
+                    <a href="#" class="btn-excluir">Excluir</a>
+                </article>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - Área do Autor</p>
+        </footer>
+    </div>
+</body>
+</html>

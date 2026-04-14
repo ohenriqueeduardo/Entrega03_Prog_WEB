@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News - Home</title>
+    <link rel="stylesheet" href="/fakenews_grupo11/assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Fake News</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="index.html">Home</a>
+                    <a href="lista-noticias.html">Lista de Notícias</a>
+                    <a href="cadastro.html">Cadastro</a>
+                    <a href="login.html">Login</a>
+                    <a href="../autor/dashboard.html">Área Autor</a>
+                    <a href="../leitor/meu-perfil.html">Área Leitor</a>
+                    <a href="../superadmin/dashboard.html">SuperAdmin</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="hero">
+                <h2>Bem-vindo ao Fake News</h2>
+                <p>O portal que traz as notícias mais comentadas - veracidade questionável, entretenimento garantido.</p>
+            </div>
+
+            <div class="busca-uf">
+                <h3>Busca por UF</h3>
+                <form class="form-busca">
+                    <select name="uf">
+                        <option value="">Selecione a UF</option>
+                        <option value="SP">São Paulo - SP</option>
+                        <option value="RJ">Rio de Janeiro - RJ</option>
+                        <option value="MG">Minas Gerais - MG</option>
+                        <option value="BA">Bahia - BA</option>
+                        <option value="RS">Rio Grande do Sul - RS</option>
+                        <option value="DF">Distrito Federal - DF</option>
+                        <option value="PR">Paraná - PR</option>
+                        <option value="SC">Santa Catarina - SC</option>
+                    </select>
+                    <button type="submit">Filtrar Notícias</button>
+                </form>
+            </div>
+
+            <div class="noticias-destaque">
+                <h3>Últimas Notícias</h3>
+                <div class="grid-noticias">
+                    <article class="card-noticia">
+                        <h4>Eleições 2026: candidato promete grama sintética em todas as praças</h4>
+                        <div class="meta">Por: Redação Fake News | 12/04/2026</div>
+                        <p>Em comício ontem, o candidato prometeu modernizar os espaços públicos com grama sintética de alta tecnologia...</p>
+                        <a href="noticia-detalhe.html" class="btn-ler">Ler mais</a>
+                        <a href="../leitor/comentar.html" class="btn-comentar">Comentar</a>
+                    </article>
+                    <article class="card-noticia">
+                        <h4>Cientistas descobrem nova espécie de gato que late</h4>
+                        <div class="meta">Por: João Silva | 11/04/2026</div>
+                        <p>Pesquisadores da Amazônia encontraram um felino com comportamento canino. Especialistas estão divididos...</p>
+                        <a href="noticia-detalhe.html" class="btn-ler">Ler mais</a>
+                        <a href="../leitor/comentar.html" class="btn-comentar">Comentar</a>
+                    </article>
+                    <article class="card-noticia">
+                        <h4>Governo anuncia feriado nacional toda sexta-feira</h4>
+                        <div class="meta">Por: Ministério da Economia | 10/04/2026</div>
+                        <p>Medida visa estimular o turismo e a economia criativa. Projeto será votado na próxima semana...</p>
+                        <a href="noticia-detalhe.html" class="btn-ler">Ler mais</a>
+                        <a href="../leitor/comentar.html" class="btn-comentar">Comentar</a>
+                    </article>
+                    <article class="card-noticia">
+                        <h4>Chuva de meteoros atinge centro de São Paulo</h4>
+                        <div class="meta">Por: Repórter Cósmico | 09/04/2026</div>
+                        <p>Moradores relataram luzes no céu durante a madrugada. Astrônomos explicam fenômeno raro...</p>
+                        <a href="noticia-detalhe.html" class="btn-ler">Ler mais</a>
+                        <a href="../leitor/comentar.html" class="btn-comentar">Comentar</a>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - Portal de Notícias. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

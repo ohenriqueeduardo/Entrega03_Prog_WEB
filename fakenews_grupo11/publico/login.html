@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News - Login</title>
+    <link rel="stylesheet" href="/fakenews_grupo11/assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Fake News</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="index.html">Home</a>
+                    <a href="lista-noticias.html">Lista de Notícias</a>
+                    <a href="cadastro.html">Cadastro</a>
+                    <a href="login.html">Login</a>
+                    <a href="../autor/dashboard.html">Área Autor</a>
+                    <a href="../leitor/meu-perfil.html">Área Leitor</a>
+                    <a href="../superadmin/dashboard.html">SuperAdmin</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form-padrao">
+                <h2>Login</h2>
+                
+                <label>E-mail:</label>
+                <input type="email" placeholder="seu@email.com">
+                
+                <label>Senha:</label>
+                <input type="password" placeholder="Digite sua senha">
+                
+                <div class="lembrar">
+                    <input type="checkbox" id="lembrar">
+                    <label for="lembrar">Lembrar acesso</label>
+                </div>
+                
+                <button type="submit">Entrar</button>
+                
+                <p style="text-align: center; margin-top: 1rem;">Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - Portal de Notícias</p>
+        </footer>
+    </div>
+</body>
+</html>

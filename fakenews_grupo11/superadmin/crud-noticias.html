@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperAdmin - CRUD Notícias</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>CRUD Notícias</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="crud-cidades.html">CRUD Cidades</a>
+                    <a href="crud-noticias.html">CRUD Notícias</a>
+                    <a href="crud-usuarios.html">CRUD Usuários</a>
+                    <a href="editor-qualquer-noticia.html">Editor Qualquer Notícia</a>
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <h2>CRUD Notícias - Listar, Criar, Exibir, Atualizar, Apagar</h2>
+            
+            <!-- LISTAR -->
+            <div class="subpage">
+                <h3>📰 Listar Todas as Notícias</h3>
+                <div class="tabela-crud">
+                    <table>
+                        <thead><tr><th>ID</th><th>Título</th><th>Autor</th><th>Status</th><th>Ações</th></tr></thead>
+                        <tbody>
+                            <tr><td>1</td><td>Robô substitui professores</td><td>João Silva</td><td>Publicada</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                            <tr><td>2</td><td>Água da torneira vira suco</td><td>João Silva</td><td>Publicada</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                            <tr><td>3</td><td>Eleições 2026: grama sintética</td><td>Redação</td><td>Publicada</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                            <tr><td>4</td><td>Gato que late</td><td>João Silva</td><td>Rascunho</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- CRIAR -->
+            <div class="subpage">
+                <h3>➕ Criar Nova Notícia</h3>
+                <form>
+                    <label>Título:</label><input type="text" placeholder="Título da notícia">
+                    <label>Conteúdo:</label><textarea rows="4" placeholder="Conteúdo da notícia"></textarea>
+                    <label>Autor:</label><select><option>João Silva</option><option>Maria Santos</option><option>Redação</option></select>
+                    <label>Cidade/UF:</label><select><option>São Paulo - SP</option><option>Rio de Janeiro - RJ</option><option>Belo Horizonte - MG</option></select>
+                    <button type="submit" style="margin-top: 1rem;">Criar Notícia</button>
+                </form>
+            </div>
+            
+            <!-- EXIBIR -->
+            <div class="subpage">
+                <h3>🔍 Exibir Notícia</h3>
+                <div class="card-noticia">
+                    <h4>Robô substitui professores em escola municipal</h4>
+                    <div class="meta">Autor: João Silva | 08/04/2026 | SP</div>
+                    <p>Inovação ou polêmica? Robôs começam a dar aulas em escola de São Paulo. A medida, aprovada pela Secretaria de Educação, promete revolucionar o ensino...</p>
+                </div>
+            </div>
+            
+            <!-- ATUALIZAR -->
+            <div class="subpage">
+                <h3>✏️ Atualizar Notícia</h3>
+                <form>
+                    <label>Selecione a notícia:</label>
+                    <select><option>Robô substitui professores</option><option>Água da torneira vira suco</option><option>Eleições 2026</option></select>
+                    <label>Novo título:</label><input type="text" value="Robô substitui professores">
+                    <label>Novo conteúdo:</label><textarea rows="4">Conteúdo atualizado da notícia...</textarea>
+                    <button type="submit" style="margin-top: 1rem;">Salvar Alterações</button>
+                </form>
+            </div>
+            
+            <!-- APAGAR -->
+            <div class="subpage">
+                <h3>🗑️ Apagar Notícia</h3>
+                <form>
+                    <label>Selecione a notícia para remover:</label>
+                    <select><option>Robô substitui professores</option><option>Água da torneira vira suco</option></select>
+                    <div class="aviso">⚠️ Atenção: Esta ação não poderá ser desfeita!</div>
+                    <button type="submit" style="background: #dc3545;">Apagar Notícia</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - SuperAdmin | CRUD Notícias Completo</p>
+        </footer>
+    </div>
+</body>
+</html>

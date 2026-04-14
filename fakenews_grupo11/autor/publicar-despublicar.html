@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autor - Publicar/Despublicar</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Publicar / Despublicar</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                    <a href="minhas-noticias.html">Minhas Notícias</a>
+                    <a href="editor-noticia.html">Editor Notícia</a>
+                    <a href="nova-noticia.html">Nova Notícia</a>
+                    <a href="publicar-despublicar.html">Publicar/Despublicar</a>
+                    <a href="comentar.html">Comentar</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form-padrao">
+                <h2>Publicar / Despublicar Notícia</h2>
+                
+                <label>Selecione a notícia:</label>
+                <select>
+                    <option>Robô substitui professores (Publicada)</option>
+                    <option>Água da torneira vira suco (Publicada)</option>
+                    <option>Novo iPhone terá bateria de 1 semana (Rascunho)</option>
+                    <option>Chuva de meteoros em SP (Publicada)</option>
+                    <option>Fantasma assusta centro do Rio (Rascunho)</option>
+                </select>
+                
+                <label>Status atual:</label>
+                <div class="aviso" style="text-align: center;">Publicada</div>
+                
+                <button type="submit" style="background: #dc3545;">Despublicar Notícia</button>
+                <button type="submit" style="background: #28a745; margin-top: 0.5rem;">Publicar Notícia</button>
+            </form>
+            
+            <div class="tabela-crud" style="margin-top: 2rem;">
+                <h3>Todas as Notícias</h3>
+                <table>
+                    <thead><tr><th>Título</th><th>Status</th><th>Ação</th></tr></thead>
+                    <tbody>
+                        <tr><td>Robô substitui professores</td><td style="color: green;">Publicada</td><td><button style="background: #dc3545; padding: 0.3rem 0.8rem;">Despublicar</button></td></tr>
+                        <tr><td>Água da torneira vira suco</td><td style="color: green;">Publicada</td><td><button style="background: #dc3545; padding: 0.3rem 0.8rem;">Despublicar</button></td></tr>
+                        <tr><td>Novo iPhone bateria 1 semana</td><td style="color: orange;">Rascunho</td><td><button style="background: #28a745; padding: 0.3rem 0.8rem;">Publicar</button></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - Área do Autor</p>
+        </footer>
+    </div>
+</body>
+</html>

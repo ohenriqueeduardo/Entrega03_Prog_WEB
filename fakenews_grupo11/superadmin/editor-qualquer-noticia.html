@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperAdmin - Editor Qualquer Notícia</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Editor Qualquer Notícia</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="crud-cidades.html">CRUD Cidades</a>
+                    <a href="crud-noticias.html">CRUD Notícias</a>
+                    <a href="crud-usuarios.html">CRUD Usuários</a>
+                    <a href="editor-qualquer-noticia.html">Editor Qualquer Notícia</a>
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form-padrao">
+                <h2>Editor Qualquer Notícia (SuperAdmin)</h2>
+                
+                <label>Selecionar notícia para editar:</label>
+                <select>
+                    <option>Robô substitui professores (Autor: João Silva)</option>
+                    <option>Água da torneira vira suco (Autor: João Silva)</option>
+                    <option>Eleições 2026: grama sintética (Autor: Redação)</option>
+                    <option>Gato que late (Autor: João Silva)</option>
+                    <option>Chuva de meteoros (Autor: Repórter Cósmico)</option>
+                    <option>Fantasma assusta centro do Rio (Autor: Paranormal BR)</option>
+                </select>
+                
+                <label>Título da Notícia:</label>
+                <input type="text" value="Robô substitui professores em escola municipal">
+                
+                <label>Autor:</label>
+                <input type="text" value="João Silva" placeholder="Nome do autor">
+                
+                <label>Categoria:</label>
+                <select>
+                    <option>Tecnologia</option>
+                    <option>Política</option>
+                    <option>Educação</option>
+                    <option>Esportes</option>
+                </select>
+                
+                <label>UF:</label>
+                <select>
+                    <option value="SP">São Paulo - SP</option>
+                    <option value="RJ">Rio de Janeiro - RJ</option>
+                    <option value="MG">Minas Gerais - MG</option>
+                </select>
+                
+                <label>Conteúdo da Notícia:</label>
+                <textarea rows="8">Inovação ou polêmica? Robôs começam a dar aulas em escola de São Paulo. A medida, aprovada pela Secretaria de Educação, promete revolucionar o ensino, mas enfrenta resistência de professores e pais. O robô, chamado "ProfBot", consegue explicar matemática e português, mas ainda não lida bem com perguntas subjetivas.</textarea>
+                
+                <label>Status:</label>
+                <select>
+                    <option selected>Publicada</option>
+                    <option>Rascunho</option>
+                </select>
+                
+                <button type="submit">Salvar Edição</button>
+            </form>
+            
+            <div class="aviso" style="margin-top: 1rem; text-align: center;">
+                🔒 Como SuperAdmin, você pode editar QUALQUER notícia do sistema, independente do autor.
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - SuperAdmin | Editor Qualquer Notícia</p>
+        </footer>
+    </div>
+</body>
+</html>

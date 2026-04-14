@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperAdmin - CRUD Usuários</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>CRUD Usuários</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="crud-cidades.html">CRUD Cidades</a>
+                    <a href="crud-noticias.html">CRUD Notícias</a>
+                    <a href="crud-usuarios.html">CRUD Usuários</a>
+                    <a href="editor-qualquer-noticia.html">Editor Qualquer Notícia</a>
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <h2>CRUD Usuários - Listar, Criar, Exibir, Atualizar, Apagar</h2>
+            
+            <!-- LISTAR -->
+            <div class="subpage">
+                <h3>👥 Listar Usuários</h3>
+                <div class="tabela-crud">
+                    <table>
+                        <thead><tr><th>ID</th><th>Nome</th><th>Email</th><th>Perfil</th><th>Ações</th></tr></thead>
+                        <tbody>
+                            <tr><td>1</td><td>Admin Super</td><td>admin@fakenews.com</td><td>SuperAdmin</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                            <tr><td>2</td><td>João Silva</td><td>joao@autor.com</td><td>Autor</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                            <tr><td>3</td><td>Maria Leitora</td><td>maria@leitor.com</td><td>Leitor</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                            <tr><td>4</td><td>Carlos Autor</td><td>carlos@autor.com</td><td>Autor</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- CRIAR -->
+            <div class="subpage">
+                <h3>➕ Criar Novo Usuário</h3>
+                <form>
+                    <label>Nome completo:</label><input type="text" placeholder="Nome">
+                    <label>Email:</label><input type="email" placeholder="email@exemplo.com">
+                    <label>Senha:</label><input type="password" placeholder="Senha">
+                    <label>Perfil:</label>
+                    <select><option>Leitor</option><option>Autor</option><option>SuperAdmin</option></select>
+                    <label>UF:</label><select><option>SP</option><option>RJ</option><option>MG</option></select>
+                    <button type="submit" style="margin-top: 1rem;">Criar Usuário</button>
+                </form>
+            </div>
+            
+            <!-- EXIBIR -->
+            <div class="subpage">
+                <h3>🔍 Exibir Usuário</h3>
+                <p><strong>Nome:</strong> João Silva</p>
+                <p><strong>Email:</strong> joao@autor.com</p>
+                <p><strong>Perfil:</strong> Autor</p>
+                <p><strong>UF:</strong> São Paulo - SP</p>
+                <p><strong>Data de cadastro:</strong> 01/03/2026</p>
+                <p><strong>Notícias publicadas:</strong> 12</p>
+            </div>
+            
+            <!-- ATUALIZAR -->
+            <div class="subpage">
+                <h3>✏️ Atualizar Usuário</h3>
+                <form>
+                    <label>Selecione o usuário:</label>
+                    <select><option>João Silva (Autor)</option><option>Maria Leitora (Leitor)</option><option>Carlos Autor (Autor)</option></select>
+                    <label>Novo nome:</label><input type="text" value="João Silva">
+                    <label>Novo email:</label><input type="email" value="joao@autor.com">
+                    <label>Novo perfil:</label><select><option>Leitor</option><option selected>Autor</option><option>SuperAdmin</option></select>
+                    <button type="submit" style="margin-top: 1rem;">Salvar Alterações</button>
+                </form>
+            </div>
+            
+            <!-- APAGAR -->
+            <div class="subpage">
+                <h3>🗑️ Apagar Usuário</h3>
+                <form>
+                    <label>Selecione o usuário para remover:</label>
+                    <select><option>João Silva (Autor)</option><option>Maria Leitora (Leitor)</option></select>
+                    <div class="aviso">⚠️ Atenção: Esta ação não poderá ser desfeita!</div>
+                    <button type="submit" style="background: #dc3545;">Apagar Usuário</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - SuperAdmin | CRUD Usuários Completo</p>
+        </footer>
+    </div>
+</body>
+</html>

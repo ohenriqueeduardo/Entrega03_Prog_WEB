@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperAdmin - Meu Perfil</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Meu Perfil - SuperAdmin</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="crud-cidades.html">CRUD Cidades</a>
+                    <a href="crud-noticias.html">CRUD Notícias</a>
+                    <a href="crud-usuarios.html">CRUD Usuários</a>
+                    <a href="editor-qualquer-noticia.html">Editor Qualquer Notícia</a>
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form-padrao">
+                <h2>Meu Perfil - SuperAdmin</h2>
+                
+                <img src="../assets/perfis/user1.png" alt="Avatar" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; display: block;" onerror="this.src='https://placehold.co/100x100'">
+                
+                <label>Nome completo:</label>
+                <input type="text" value="Admin Master Sistema">
+                
+                <label>E-mail:</label>
+                <input type="email" value="admin.super@fakenews.com">
+                
+                <label>CPF:</label>
+                <input type="text" value="***.123.456-**">
+                
+                <label>Telefone:</label>
+                <input type="text" value="(11) 99999-9999">
+                
+                <label>Perfil de acesso:</label>
+                <select disabled>
+                    <option selected>SuperAdmin (Acesso Total)</option>
+                </select>
+                
+                <button type="submit">Atualizar Perfil</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - SuperAdmin</p>
+        </footer>
+    </div>
+</body>
+</html>

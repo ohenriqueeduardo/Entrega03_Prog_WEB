@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperAdmin - CRUD Cidades</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>CRUD Cidades</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="crud-cidades.html">CRUD Cidades</a>
+                    <a href="crud-noticias.html">CRUD Notícias</a>
+                    <a href="crud-usuarios.html">CRUD Usuários</a>
+                    <a href="editor-qualquer-noticia.html">Editor Qualquer Notícia</a>
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <h2>CRUD Cidades - Listar, Criar, Exibir, Atualizar, Apagar</h2>
+            
+            <!-- LISTAR TODOS -->
+            <div class="subpage">
+                <h3>📋 Listar Cidades</h3>
+                <div class="tabela-crud">
+                    <table>
+                        <thead><tr><th>ID</th><th>Nome da Cidade</th><th>UF</th><th>Ações</th></tr></thead>
+                        <tbody>
+                            <tr><td>1</td><td>São Paulo</td><td>SP</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                            <tr><td>2</td><td>Rio de Janeiro</td><td>RJ</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                            <tr><td>3</td><td>Belo Horizonte</td><td>MG</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                            <tr><td>4</td><td>Salvador</td><td>BA</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                            <tr><td>5</td><td>Porto Alegre</td><td>RS</td><td><a href="#">Exibir</a> | <a href="#">Atualizar</a> | <a href="#">Apagar</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- CRIAR -->
+            <div class="subpage">
+                <h3>➕ Criar Nova Cidade</h3>
+                <form>
+                    <label>Nome da Cidade:</label>
+                    <input type="text" placeholder="Digite o nome da cidade">
+                    <label>UF:</label>
+                    <select><option>SP</option><option>RJ</option><option>MG</option><option>BA</option><option>RS</option><option>DF</option></select>
+                    <button type="submit" style="margin-top: 1rem;">Criar Cidade</button>
+                </form>
+            </div>
+            
+            <!-- EXIBIR -->
+            <div class="subpage">
+                <h3>🔍 Exibir Cidade (Detalhes)</h3>
+                <p><strong>Cidade selecionada:</strong> São Paulo</p>
+                <p><strong>UF:</strong> SP</p>
+                <p><strong>População estimada:</strong> 12.325.232 habitantes</p>
+                <p><strong>Data de fundação:</strong> 25 de janeiro de 1554</p>
+            </div>
+            
+            <!-- ATUALIZAR -->
+            <div class="subpage">
+                <h3>✏️ Atualizar Cidade</h3>
+                <form>
+                    <label>Selecione a cidade:</label>
+                    <select><option>São Paulo - SP</option><option>Rio de Janeiro - RJ</option><option>Belo Horizonte - MG</option></select>
+                    <label>Novo nome:</label>
+                    <input type="text" value="São Paulo">
+                    <label>Nova UF:</label>
+                    <select><option selected>SP</option><option>RJ</option><option>MG</option></select>
+                    <button type="submit" style="margin-top: 1rem;">Salvar Alterações</button>
+                </form>
+            </div>
+            
+            <!-- APAGAR -->
+            <div class="subpage">
+                <h3>🗑️ Apagar Cidade</h3>
+                <form>
+                    <label>Selecione a cidade para remover:</label>
+                    <select><option>São Paulo - SP</option><option>Rio de Janeiro - RJ</option><option>Belo Horizonte - MG</option></select>
+                    <div class="aviso" style="margin-top: 1rem;">⚠️ Atenção: Esta ação não poderá ser desfeita!</div>
+                    <button type="submit" style="background: #dc3545;">Apagar Cidade</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - SuperAdmin | CRUD Cidades Completo</p>
+        </footer>
+    </div>
+</body>
+</html>

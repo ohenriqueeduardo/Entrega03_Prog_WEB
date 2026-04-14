@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autor - Nova Notícia</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Fake News" class="logo-img" onerror="this.src='https://placehold.co/60x60?text=FN'">
+                    <h1>Criar Nova Notícia</h1>
+                </div>
+                <nav class="nav-principal">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="meu-perfil.html">Meu Perfil</a>
+                    <a href="minhas-noticias.html">Minhas Notícias</a>
+                    <a href="editor-noticia.html">Editor Notícia</a>
+                    <a href="nova-noticia.html">Nova Notícia</a>
+                    <a href="publicar-despublicar.html">Publicar/Despublicar</a>
+                    <a href="comentar.html">Comentar</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form-padrao">
+                <h2>Criar Nova Notícia</h2>
+                
+                <label>Título:</label>
+                <input type="text" placeholder="Digite o título da notícia" required>
+                
+                <label>Categoria:</label>
+                <select>
+                    <option>Tecnologia</option>
+                    <option>Política</option>
+                    <option>Esportes</option>
+                    <option>Entretenimento</option>
+                    <option>Saúde</option>
+                </select>
+                
+                <label>UF:</label>
+                <select>
+                    <option value="SP">São Paulo - SP</option>
+                    <option value="RJ">Rio de Janeiro - RJ</option>
+                    <option value="MG">Minas Gerais - MG</option>
+                    <option value="BA">Bahia - BA</option>
+                    <option value="RS">Rio Grande do Sul - RS</option>
+                    <option value="DF">Distrito Federal - DF</option>
+                </select>
+                
+                <label>Conteúdo da Notícia:</label>
+                <textarea rows="8" placeholder="Digite o conteúdo da notícia..."></textarea>
+                
+                <label>Imagem (URL):</label>
+                <input type="text" placeholder="https://exemplo.com/imagem.jpg">
+                
+                <div class="lembrar">
+                    <input type="checkbox" id="publicar">
+                    <label for="publicar">Publicar imediatamente</label>
+                </div>
+                
+                <button type="submit">Salvar Notícia</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Fake News - Área do Autor</p>
+        </footer>
+    </div>
+</body>
+</html>
